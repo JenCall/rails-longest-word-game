@@ -1,0 +1,16 @@
+<h2>What is your longest word?</h2>
+
+<p><a href="game"><strong>Home</strong></a></p>
+
+<ul style="list-style: none;" class="list-inline">
+  <% @letters.each do |letter| %>
+    <li class="list-inline-item"><%= letter %></li>
+  <%end%>
+</ul>
+
+<p>What is the longest word you can find?</p>
+
+<form action="score">
+  <input type="text" name="word">
+  <input type="submit" value="Send!">
+</form>
